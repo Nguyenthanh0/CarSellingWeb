@@ -1,0 +1,58 @@
+.car-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.car-image {
+    width: 150px;
+    height: auto;
+    margin: 12px 0 12px 12px;
+}
+
+.car-info {
+    padding: 16px;
+    position: relative;
+    bottom: 24px;
+}
+
+.car-info h3 {
+    margin: 0 0 8px;
+}
+
+.car-info p {
+    margin: 4px 0;
+    color: white;
+}
+
+.new1 {
+    margin-bottom: 20px;
+    position: relative;
+    top: 13px;
+    justify-content: center;
+    display: flex;
+    width: 43px;
+    height: 25px;
+    color: #007CC7;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid #007CC7;
+}
+
+.new1 p {
+    color: #007CC7;
+
+}
+
+.car-infor {
+    display: flex;
+    justify-content: space-between;
+    width: 307px;
+    height: 30px;
+}
+
+.car-infor div p {
+    width: unset !important;
+}

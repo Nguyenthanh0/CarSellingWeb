@@ -1,0 +1,62 @@
+.credit-simulation {
+    background-color: hsla(204, 64%, 8%, 1);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    margin-top: 20px;
+
+}
+
+.credit-simulation h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.credit-simulation-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - 20px);
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: hsla(204, 44%, 13%, 1);
+
+
+    color: #fff;
+}
+
+.monthly-payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    background: hsla(204, 44%, 13%, 1);
+
+
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.payment-amount {
+    font-size: 28px;
+    color: #00bfff;
+    margin-top: 10px;
+}
