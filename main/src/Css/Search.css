@@ -15,6 +15,9 @@
 }
 
 .searchIcon1 {
+    left: 735px;
+    top: 40px;
+    position: relative;
     color: white;
     font-size: 14px;
 }

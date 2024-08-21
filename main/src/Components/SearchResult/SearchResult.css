@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  background-color: #1e1e1e;
+ 
 }
 
 .car-row {
@@ -13,11 +13,11 @@
 }
 
 .car-card1 {
-  background: #2e2e2e;
+  
   color: #fff;
   padding: 10px;
   border-radius: 8px;
-  
+  border: 2px solid hsla(204, 44%, 13%, 1);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -37,10 +37,11 @@
 }
 
 .car-price {
-  font-size: 16px; /* Giảm kích thước chữ */
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 16px;
   font-weight: bold;
   color: #007CC7;
-
 }
 
 .old-price {
@@ -54,6 +55,7 @@
 }
 .condition {
   width: 50px;
+  margin-bottom: 20px;
   position: relative;
   height: 40px;
   align-items: center;

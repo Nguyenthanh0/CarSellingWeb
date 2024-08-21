@@ -6,10 +6,10 @@ const CarCard2 = ({ car }) => {
     return (
         <div className="car-card">
             <img src={car.image} alt={car.name} className="car-image" />
-            <div className="car-info">
+            <div className="car-info2">
                 <div className='Used'><p>Used</p></div>
                 <h3>{car.name}</h3>
-                <p>{car.price}</p>
+                <h3 style={{color:'#007CC7'}}>{car.price}</h3>
                 <p>{car.place}</p>
                 <div className="car-infor">
                     <div><p>{car.year}</p></div>

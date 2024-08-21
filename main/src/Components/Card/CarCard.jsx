@@ -7,7 +7,7 @@ const CarCard = ({ car }) => {
         <div className="car-card">  
                    <img src={car.image} alt={car.name} className="car-image" />
             <div className="car-info">
-                <div className='new'><p>New</p></div>
+                <div className='new1'>New</div>
                 <h3>{car.name}</h3>
                 <h3 style={{color:'#007CC7'}}>{car.price}</h3>
                 <p>{car.place}</p>

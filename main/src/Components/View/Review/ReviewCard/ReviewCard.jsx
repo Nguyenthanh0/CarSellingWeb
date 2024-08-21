@@ -20,19 +20,22 @@ const ReviewCard = ({
         </div>
       </div>
       <div className="review-content">
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <h3 style={{marginBottom:'20px'}}>{title}</h3>
+        <p style={{color:'white', marginTop:'10px'}}>{description}</p>
         <div className="review-footer">
           <div className="rating">{Array(rating).fill("★").join("")}</div>
-          <div className="author-info">
-            <img src={author.image} alt={author.name} />
-            <p>{author.name}</p>
+          <div className="author-info" style={{marginBottom:'20px'}}>
+            <img src={author.image} alt={author.name} style={{marginBottom:'20px'}} />
+            <p style={{marginBottom:'20px'}}>{author.name}</p>
           </div>
+          <div style={{display:'flex',justifyContent:'space-around',position:'relative',right:'36px'}}>
           <div className="comments">
             <i className="fa fa-comment"></i>
             {comments} Comment{comments > 1 ? "s" : ""}
           </div>
           <div className="date">{date}</div>
+          </div>
+          
         </div>
       </div>
     </div>

@@ -12,18 +12,19 @@
     height: 150px;
 }
 
-.car-info {
+.car-info2 {
+    left:40px;
     padding: 16px;
     position: relative;
     bottom: 24px;
 }
 
-.car-info h3 {
+.car-info2 h3 {
     margin: 0 0 8px;
     color: white;
 }
 
-.car-info p {
+.car-info2 p {
     margin: 4px 0;
     color: white;
 }

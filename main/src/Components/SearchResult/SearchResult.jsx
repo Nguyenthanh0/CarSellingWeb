@@ -20,7 +20,7 @@ const SearchResult = () => {
               <div className="car-info1">
                 <div className='condition'><p>{car.condition}</p></div>
                 <h3>{car.name}</h3>
-                <p className="car-price">{car.price} {car.oldPrice && <span className="old-price">{car.oldPrice}</span>}</p>
+                <h3 className="car-price">{car.price} {car.oldPrice && <span className="old-price">{car.oldPrice}</span>}</h3>
                 <p>{car.place}</p>
                 <p>{car.year} • {car.style}</p>
                 <p>{car.energy} • {car.seat} seats</p>
