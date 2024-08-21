@@ -31,26 +31,34 @@ function RecommendedCars({ car }) {
           {car.name}
         </h3>
         <h3 style={h3style}>{car.price}</h3>
-        <p style={{ fontSize: "16px" }}>{car.place}</p>
+        <p style={{ fontSize: "16px", color: "white" }}>{car.place}</p>
         <div className="thongTin">
           <div className="col1">
             <div className="calendar">
               <FaCalendarAlt className="calendarIcon" />
-              <p style={{ fontSize: "16px", width: "114px" }}>{car.year}</p>
+              <p style={{ fontSize: "16px", width: "114px", color: "white" }}>
+                {car.year}
+              </p>
             </div>
             <div className="calendar">
               <RiGasStationLine className="calendarIcon" />
-              <p style={{ fontSize: "16px", width: "114px" }}>{car.energy}</p>
+              <p style={{ fontSize: "16px", width: "114px", color: "white" }}>
+                {car.energy}
+              </p>
             </div>
           </div>
           <div className="col2">
             <div className="calendar">
               <TbSteeringWheel className="calendarIcon" />
-              <p style={{ fontSize: "16px", width: "200px" }}>{car.wheel}</p>
+              <p style={{ fontSize: "16px", width: "200px", color: "white" }}>
+                {car.wheel}
+              </p>
             </div>
             <div className="calendar">
               <RiParentLine className="calendarIcon" />
-              <p style={{ fontSize: "16px", width: "114px" }}>{car.seat}</p>
+              <p style={{ fontSize: "16px", width: "114px", color: "white" }}>
+                {car.seat}
+              </p>
             </div>
           </div>
         </div>
