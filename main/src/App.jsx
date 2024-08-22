@@ -9,7 +9,7 @@ import SearchResult2 from "./Components/View/SeacrhResult2/SearchResult2";
 function App() {
   return (
     <div className="container">
-      <SearchResult2></SearchResult2>
+      <SearchResult></SearchResult>
     
     </div>
   );
