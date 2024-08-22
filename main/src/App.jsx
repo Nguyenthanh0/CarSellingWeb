@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="container">
       
-     <Tesla></Tesla>
+    <Review></Review>
     </div>
   );
 }
