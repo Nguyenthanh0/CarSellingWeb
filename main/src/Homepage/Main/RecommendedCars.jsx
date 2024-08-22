@@ -17,7 +17,7 @@ function RecommendedCars({ car }) {
     <div className="car-recommend">
       <img src={car.img} alt={car.name} className="car-image" />
       <div className="car-inf">
-        <div className="new">
+        <div className="new-thanh">
           <p className="p-new">New</p>
         </div>
         <h3

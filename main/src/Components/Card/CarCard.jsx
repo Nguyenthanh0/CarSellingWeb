@@ -6,6 +6,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { TbSteeringWheel } from "react-icons/tb";
 import { RiGasStationLine } from "react-icons/ri";
 import { RiParentLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const CarCard = ({ car }) => {
   return (
@@ -13,7 +14,10 @@ const CarCard = ({ car }) => {
       <img src={car.image} alt={car.name} className="car-image" />
       <div className="car-info">
         <div className="new1">New</div>
-        <h3>{car.name}</h3>
+        <Link to="/homepage/newcarlist/cardetail">
+          <h3>{car.name}</h3>
+        </Link>
+
         <h3 style={{ color: "#007CC7" }}>{car.price}</h3>
         <p>{car.place}</p>
         <div className="car-infor">

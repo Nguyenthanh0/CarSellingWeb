@@ -10,6 +10,7 @@ import UsedCar from "./Components/View/UsedCar/UsedCar";
 import Login from "./componentOfThanh/Login";
 import Register from "./componentOfThanh/Register";
 import News from "./componentOfThanh/News";
+import CarsDetail from "./Components/View/CarsDetail/CarsDetail";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register></Register>,
+  },
+  {
+    path: "/homepage/newcarlist/cardetail",
+    element: <CarsDetail></CarsDetail>,
   },
 ]);
 
