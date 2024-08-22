@@ -1,11 +1,12 @@
 .content1 {
     background-color: #12232E;
-    position: relative;
-    padding: 30px 0;
+
 }
 
 .content1 h1 {
     position: relative;
+    bottom: 50px;
+    font-size: xxx-large;
     left: 40px;
     /* bottom:20px; */
     color: white;
@@ -15,6 +16,8 @@
 
 .content1 p {
     position: relative;
+    bottom: 50px;
+    font-size: xx-large;
     left: 40px;
     /* bottom:20px; */
     margin: 0;

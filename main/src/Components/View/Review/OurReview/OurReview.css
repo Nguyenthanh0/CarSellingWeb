@@ -49,6 +49,8 @@
 
 .review-content {
     padding: 30px;
+    background: hsla(204, 44%, 13%, 1);
+
     /* Tăng padding cho nội dung */
 }
 
@@ -67,6 +69,7 @@
     /* Giữ kích thước biểu tượng sao */
     margin-bottom: 10px;
     /* Thêm khoảng cách dưới cho phần sao */
+    margin-top:30px;
 }
 
 .author-info {

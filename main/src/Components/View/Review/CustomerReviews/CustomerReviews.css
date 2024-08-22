@@ -2,22 +2,21 @@
     padding: 40px;
     background-color: #111;
     text-align: center;
+    position: relative; /* Thêm position relative để định vị các nút bên trong container */
 }
 
 .reviews-slider {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* Để các card tự động xuống hàng khi không đủ không gian */
     margin-bottom: 20px;
+    position: relative; /* Thêm position relative để căn cứ định vị các nút */
 }
 
 .review-card {
     background-color: #222;
     margin: 10px;
-    /* Giảm margin để hai xe có thể đứng cạnh nhau */
     width: 45%;
-    /* Điều chỉnh độ rộng để hiển thị hai xe trên cùng một hàng */
     border-radius: 10px;
     overflow: hidden;
     text-align: left;
@@ -39,14 +38,12 @@
     margin-bottom: 10px;
     font-size: 22px;
     color: white;
-
 }
 
 .review-content h4 {
     margin-bottom: 10px !important;
     font-size: 20px !important;
     color: white !important;
-    margin: top 10px !important;
 }
 
 .review-content ul {
@@ -63,22 +60,54 @@
     color: gold;
     font-size: 24px;
 }
-
 .navigation {
-    display: flex !important;
-    justify-content: center !important;
-    gap: 50px !important;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
-.navigation button {
-    background: none;
+.navigation .prve,
+.navigation .after {
+    background-color: #007CC7;
     border: none;
     color: white;
-    font-size: 30px;
+    font-size: 24px;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
+.navigation .prve:hover,
+.navigation .after:hover {
+    background-color: #005a9e;
+}
+
+.navigation .prve:focus,
+.navigation .after:focus {
+    outline: none;
+}
+
+.prve {
+    position: absolute;
+    left: -25px;
+}
+
+.after {
+    position: absolute;
+    right: -25px;
+}
 ul>li {
     list-style: none;
-    color: white
+    color: white;
 }
