@@ -7,7 +7,7 @@ const Result2 = () => {
             <div className='result'>
            
            
-           <h1>8 Results</h1>
+           <h1>6 Results</h1>
            <select className='sort-select'>
                <option value="">Sort by</option>
            </select>

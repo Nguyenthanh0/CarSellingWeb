@@ -35,7 +35,21 @@
   margin-top: 10px;
   
 }
+.car-place {
+  margin: 4px 0;
+    color: white;
+    margin-bottom: 20px;
 
+}
+.car-year {
+  margin: 4px 0;
+    color: white;
+    margin-bottom: 20px;
+}
+.car-energy {
+  margin: 4px 0;
+    color: white;
+}
 .car-price {
   margin-bottom: 20px;
   margin-top: 10px;
