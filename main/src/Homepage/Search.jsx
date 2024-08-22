@@ -22,7 +22,7 @@ function Search() {
           <option>Brand</option>
         </select>
       </div>
-      <div className="location">
+      <div className="location-thanh">
         <IoLocationOutline className="licon" />
         <input type="text" placeholder="Location" />
         <div className="pricerange">
