@@ -28,7 +28,7 @@ const CommentBox = () => {
           onChange={(e) => setComment(e.target.value)}
           placeholder="Leave a message here"
         ></textarea>
-        <button onClick={handleAddComment}>Add Comment</button>
+        <button  className="comment-button"onClick={handleAddComment}>Add Comment</button>
       </div>
     </div>
   );
