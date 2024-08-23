@@ -10,7 +10,7 @@ import c5 from "../../../img/detail5.png";
 import c6 from "../../../img/detail6.png";
 import c8 from "../../../img/image 13.png";
 import Content from "../Content/Content";
-import Checkbox from "../../Checkbox";
+import Checkbox from "../../Checkbox.jsx";
 import Divider from "../../Devider";
 import c7 from "../../../img/dealer.png";
 import ContactForm from "../../ContactForm";

@@ -12,15 +12,15 @@ function Footer() {
         <img src={logo} alt="" />
       </div>
       <div className="line"></div>
-      <div className="info">
-        <div className="contact">
+      <div className="info-thanh">
+        <div className="contact1">
           <ul>
             <li>ABOUT US</li>
             <li>FAQ</li>
             <li>CONTACT</li>
           </ul>
         </div>
-        <div className="contact">
+        <div className="contact1">
           <ul>
             <li>CUSTOMER SERVICE</li>
             <li>info@car.com</li>

@@ -39,7 +39,6 @@
 .sicon {
     font-size: 20px;
     position: absolute;
-
     color: white;
 }
 
@@ -62,13 +61,13 @@ select>section {
     color: white;
 }
 
-.location {
+.location-thanh {
     display: flex;
     align-items: center;
     gap: 48px;
 }
 
-.location>input {
+.location-thanh>input {
     width: 50px;
     padding: 16px 250px 16px 36px;
 }

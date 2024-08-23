@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import car1 from "../../../../img/Tesla.png";
 import car2 from "../../../../img/Ford.png";
 import car3 from "../../../../img/Honda.png";
+import { Link } from "react-router-dom";
+
 const vehicles = [
   {
     image: car2,
@@ -36,7 +38,7 @@ const vehicles = [
     rating: 4,
     reviews: 12,
   },
- 
+
   // Thêm các xe khác nếu cần
 ];
 
@@ -68,19 +70,36 @@ const CustomerReview = () => {
                 }}
               ></div>
               <div className="review-content">
-                <h3 style={{marginBottom:'20px'}}>{vehicle.title}</h3>
-                <h3 style={{marginBottom:'10px', color: 'hsla(203, 100%, 39%, 1)'
-}}>{vehicle.price}</h3>
+                <Link to="/homepage/article/review/tesla">
+                  <h3 style={{ marginBottom: "20px" }}>{vehicle.title}</h3>
+                </Link>
+
+                <h3
+                  style={{
+                    marginBottom: "10px",
+                    color: "hsla(203, 100%, 39%, 1)",
+                  }}
+                >
+                  {vehicle.price}
+                </h3>
                 <ul>
-                  <div style={{display:'flex',gap:'100px',color:'white'}}>
-                  <li>{vehicle.year}</li>
-                  <li>{vehicle.driveType}</li>
+                  <div
+                    style={{ display: "flex", gap: "100px", color: "white" }}
+                  >
+                    <li>{vehicle.year}</li>
+                    <li>{vehicle.driveType}</li>
                   </div>
-                  <div style={{display:'flex',gap:'100px',color:'white',marginTop:'30px'}}>
-                  <li>{vehicle.fuelType}</li>
-                  <li>Passengers: {vehicle.passengers}</li>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "100px",
+                      color: "white",
+                      marginTop: "30px",
+                    }}
+                  >
+                    <li>{vehicle.fuelType}</li>
+                    <li>Passengers: {vehicle.passengers}</li>
                   </div>
-                 
                 </ul>
                 <div className="rating">
                   {"★".repeat(vehicle.rating)}
@@ -92,8 +111,12 @@ const CustomerReview = () => {
           ))}
       </div>
       <div className="navigation">
-        <button className="prve" onClick={prevVehicle}>&#8249;</button>
-        <button className="after"onClick={nextVehicle}>&#8250;</button>
+        <button className="prve" onClick={prevVehicle}>
+          &#8249;
+        </button>
+        <button className="after" onClick={nextVehicle}>
+          &#8250;
+        </button>
       </div>
     </div>
   );

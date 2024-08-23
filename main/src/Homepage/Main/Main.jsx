@@ -99,7 +99,7 @@ function Main() {
             <img src={cmtC} alt="" />
             <div className="cmtOfCustemer">
               <h2>Etiam Eget</h2>
-              <p style={{ fontSize: "16px", width: "405px" }}>
+              <p style={{ fontSize: "16px", width: "405px", color: "#ffffff" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eget praesent gravida sed rutrum suspendisse eu.{" "}
               </p>
@@ -108,7 +108,9 @@ function Main() {
                 style={{ display: "flex", alignItems: "center", gap: "21px" }}
               >
                 <img src={cmtUer} alt="" />
-                <p style={{ fontSize: "14px" }}>By Carla Baptista</p>
+                <p style={{ fontSize: "14px", color: "white" }}>
+                  By Carla Baptista
+                </p>
               </div>
             </div>
           </div>
@@ -119,7 +121,7 @@ function Main() {
                 <h3 style={{ fontSize: "24px", color: "#007CC7" }}>
                   A NEW CAR
                 </h3>
-                <p style={{ fontSize: "18px" }}>
+                <p style={{ fontSize: "18px", color: "white" }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <div
@@ -130,19 +132,19 @@ function Main() {
                   }}
                 >
                   <img src={cmtUer} style={{ width: "24px", height: "24p" }} />
-                  <p style={{ fontSize: "14px" }}>
+                  <p style={{ fontSize: "14px", color: "white" }}>
                     By Carla Baptista - May, 28 2021
                   </p>
                 </div>
               </div>
             </dir>
             <dir className="secondCmt">
-              <img src={cmtC1} />
+              <img src={cmtC1} style={{ height: "175px" }} />
               <div className="cmtOfCustemer">
                 <h3 style={{ fontSize: "24px", color: "#007CC7" }}>
                   A NEW CAR
                 </h3>
-                <p style={{ fontSize: "18px" }}>
+                <p style={{ fontSize: "18px", color: "white" }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <div
@@ -153,7 +155,7 @@ function Main() {
                   }}
                 >
                   <img src={cmtUer} style={{ width: "24px", height: "24p" }} />
-                  <p style={{ fontSize: "14px" }}>
+                  <p style={{ fontSize: "14px", color: "white" }}>
                     By Carla Baptista - May, 28 2021
                   </p>
                 </div>
@@ -349,7 +351,7 @@ function Main() {
                 >
                   Customer
                 </h3>
-                <p style={{ width: "547px", fontSize: "18px" }}>
+                <p style={{ width: "547px", fontSize: "18px", color: "white" }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                   vel aliquet tortor ut sit sit. Velit imperdiet integer
                   elementum a scelerisque pulvinar venenatis sodales. Quis nulla

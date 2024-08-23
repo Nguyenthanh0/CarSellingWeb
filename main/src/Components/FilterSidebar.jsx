@@ -39,7 +39,10 @@ const FilterSidebar = ({ onFilterChange }) => {
   };
 
   const handleDropdownChange = (category, value) => {
-    const newFilters = { ...filters, [category]: value };
+    const newFilters = {
+      ...filters,
+      [category]: value ? [value] : [],
+    };
     setFilters(newFilters);
     onFilterChange(newFilters); // Cập nhật bộ lọc
   };

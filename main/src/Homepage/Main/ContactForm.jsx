@@ -126,7 +126,7 @@ const ContactForm = () => {
             placeholder="Leave a message here"
           />
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" className="Send1">Send</button>
       </form>
     </div>
   );

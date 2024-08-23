@@ -7,6 +7,7 @@ import Page from "../../Page/Page";
 import Header from "../../Header/Header";
 import Content from "../Content/Content";
 import "./NewCar.css";
+import Footer from "../../../componentOfThanh/Footer";
 
 const NewCar = () => {
   const [filters, setFilters] = useState({
@@ -47,6 +48,8 @@ const NewCar = () => {
           <Page />
         </div>
       </main>
+
+      <Footer></Footer>
     </div>
   );
 };

@@ -14,7 +14,8 @@ const Data = [
         year:"2020",
         style:"Rear-wheel Drive",
         energy:"Electric",
-        seat:"5"
+        seat:"5",
+        brand: "Tesla",
     },
     {
         id: 2,
@@ -25,7 +26,8 @@ const Data = [
         year:"2021",
         style:"Four-wheel Drive",
         energy:"Diesel",
-        seat:"5"
+        seat:"5",
+        brand: "Ford",
     },
     {
         id: 3,
@@ -36,7 +38,8 @@ const Data = [
         year:"2021",
         style:"All-wheel Drive",
         energy:"Gasoline",
-        seat:"7"
+        seat:"7",
+        brand: "Honda",
     },
     {
         id: 4,
@@ -47,7 +50,8 @@ const Data = [
         year:"2017",
         style:"Front-wheel Drive",
         energy:"Gasoline",
-        seat:"5"
+        seat:"5",
+        brand: "Chevrolet",
     },
     {
         id: 5,
@@ -58,7 +62,8 @@ const Data = [
         year:"2021",
         style:"Front-wheel Drive",
         energy:"Gasoline",
-        seat:"7"
+        seat:"7",
+        brand: "Kia",
     },
     {
         id: 6,
@@ -69,7 +74,8 @@ const Data = [
         year:"2022",
         style:"Front-wheel Drive",
         energy:"Gasoline",
-        seat:"5"
+        seat:"5",
+        brand: "Mini",
     },
     
 ] 

@@ -13,7 +13,8 @@ const Data2 = [
         year:"2021",
         style:"Four-wheel Drive",
         energy:"Hybrid",
-        seat:"5"
+        seat:"5",
+        brand:'Jeep'
     },
     {
         id: 8,
@@ -24,7 +25,8 @@ const Data2 = [
         year:"2021",
         style:"All-wheel Drive",
         energy:"Electric",
-        seat:"5"
+        seat:"5",
+        brand:"Audi"
     },
     {
         id: 9,
@@ -35,7 +37,8 @@ const Data2 = [
         year:"2021",
         style:"All-wheel Drive",
         energy:"Gasoline",
-        seat:"5"
+        seat:"5",
+        brand:"Land Rover"
     },
     {
         id: 10,
@@ -46,7 +49,8 @@ const Data2 = [
         year:"2021",
         style:"Rear-wheel Drive",
         energy:"Electric",
-        seat:"5"
+        seat:"5",
+        brand:"Toyota"
     },
     
     

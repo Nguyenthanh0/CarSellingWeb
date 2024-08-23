@@ -5,7 +5,6 @@ import { FaUser } from "react-icons/fa6";
 import { GrLanguage } from "react-icons/gr";
 import { Link, useNavigate } from "react-router-dom";
 import News from "../componentOfThanh/News";
-import { Outlet } from "react-router-dom";
 
 const Navbar = () => {
   const userName = JSON.parse(localStorage.getItem("loggedInUser"))?.name;
@@ -38,8 +37,21 @@ const Navbar = () => {
         </li>
         <li>
           <select className="article-select" onChange={handleSelectChange}>
-            <option value="">Artical</option>
-            <option value="article/news">News</option>
+            <option style={{ color: "black" }} value="">
+              Artical
+            </option>
+            <option style={{ color: "black" }} value="/homepage/article/review">
+              Review
+            </option>
+            <option style={{ color: "black" }} value="/homepage/artical/news">
+              News
+            </option>
+            <option
+              style={{ color: "black" }}
+              value="/homepage/artical/news/loremIpsum"
+            >
+              Lorem Ipsum
+            </option>
           </select>
         </li>
       </ul>

@@ -27,7 +27,8 @@
     border-radius: 8px;
 }
 
-.feature-item input {
+.feature-item-input {
+    width: 13px;
     margin-right: 10px;
 }
 

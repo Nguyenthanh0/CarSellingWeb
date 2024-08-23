@@ -18,7 +18,12 @@ const FeatureComponent = () => {
       <div className="features">
         {features.map((feature, index) => (
           <div className="feature-item" key={index}>
-            <input type="checkbox" checked readOnly />
+            <input
+              className="feature-item-input"
+              type="checkbox"
+              checked
+              readOnly
+            />
             <label>{feature}</label>
           </div>
         ))}
