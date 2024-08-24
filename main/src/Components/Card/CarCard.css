@@ -70,3 +70,25 @@
     position: relative;
     bottom: 5px;
 }
+
+.custom-toast {
+    position: fixed;
+    bottom: 500px;
+    left: 59%;
+    transform: translateX(-50%);
+    background: #007CC7;
+    color: #fff;
+    padding: 30px 60px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.invertedtriangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 130px solid #007CC7;
+    position: absolute;
+    top: 0px;
+}

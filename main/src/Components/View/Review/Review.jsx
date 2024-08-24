@@ -4,6 +4,7 @@ import Content from "../Content/Content";
 import Search from "../../Search";
 import OurReviews from "./OurReview/OurReview";
 import CustomerReview from "./CustomerReviews/CustomerReviews";
+import Footer from "../../../componentOfThanh/Footer";
 const Review = () => {
   const handleSearch = (term) => {
     console.log("Search term:", term); // Xử lý logic tìm kiếm ở đây
@@ -63,6 +64,7 @@ const Review = () => {
         </div>
         <CustomerReview></CustomerReview>
       </main>
+      <Footer></Footer>
     </div>
   );
 };

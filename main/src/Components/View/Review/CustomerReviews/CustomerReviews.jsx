@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import car1 from "../../../../img/Tesla.png";
 import car2 from "../../../../img/Ford.png";
 import car3 from "../../../../img/Honda.png";
+import car4 from "../../../../img/Chevrolet.png"
+import Page from "../../../Page/Page";
 import { Link } from "react-router-dom";
 
 const vehicles = [
@@ -18,14 +20,14 @@ const vehicles = [
   },
   {
     image: car1,
-    title: "Honda Pilot Touring 7-Passenger",
-    price: "$43,735 - $44,560",
+    title: "Tesla Model S",
+    price: "$94,990 - $129,990",
     year: "2021",
     driveType: "All-wheel Drive",
-    fuelType: "Gasoline",
-    passengers: 7,
+    fuelType: "Electric",
+    passengers: 5,
     rating: 4,
-    reviews: 12,
+    reviews: 18,
   },
   {
     image: car3,
@@ -38,15 +40,26 @@ const vehicles = [
     rating: 4,
     reviews: 12,
   },
-
-  // Thêm các xe khác nếu cần
+  {
+    image: car4,
+    title: "Chervolet Equinox LS",
+    price: "$15,520 - $22,560",
+    year: "2021",
+    driveType: "Front-wheel Drive",
+    fuelType: "Gasoline",
+    passengers: 7,
+    rating: 4,
+    reviews: 10,
+  }
 ];
 
 const CustomerReview = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextVehicle = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 2) % vehicles.length);
+    setCurrentIndex((prevIndex) =>
+      prevIndex + 2 >= vehicles.length ? 0 : prevIndex + 2
+    );
   };
 
   const prevVehicle = () => {
@@ -73,7 +86,6 @@ const CustomerReview = () => {
                 <Link to="/homepage/article/review/tesla">
                   <h3 style={{ marginBottom: "20px" }}>{vehicle.title}</h3>
                 </Link>
-
                 <h3
                   style={{
                     marginBottom: "10px",
@@ -110,12 +122,12 @@ const CustomerReview = () => {
             </div>
           ))}
       </div>
-      <div className="navigation">
-        <button className="prve" onClick={prevVehicle}>
-          &#8249;
+      <div className="pagination-controls">
+        <button className="pagination-button" onClick={prevVehicle}>
+          &lt;
         </button>
-        <button className="after" onClick={nextVehicle}>
-          &#8250;
+        <button className="pagination-button" onClick={nextVehicle}>
+          &gt;
         </button>
       </div>
     </div>

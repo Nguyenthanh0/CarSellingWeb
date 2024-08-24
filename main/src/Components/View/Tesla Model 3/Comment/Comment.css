@@ -50,6 +50,6 @@
     align-self: flex-start; /* Giúp nút giữ vị trí và không thay đổi khi textarea thay đổi */
   }
   
-  button:hover {
+  .comment-button:hover {
     background-color: #4090c0;
   }

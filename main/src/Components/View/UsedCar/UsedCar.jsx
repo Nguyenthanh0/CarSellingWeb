@@ -7,6 +7,7 @@ import Page from "../../Page/Page";
 import Header from "../../Header/Header";
 import Content from "../Content/Content";
 import "./UsedCar.css";
+import Footer from "../../../componentOfThanh/Footer";
 const UsedCar = () => {
   const [filters2, setFilters] = useState({
     year: [],
@@ -44,9 +45,10 @@ const UsedCar = () => {
           <Search onSearch={handleSearch} />
           <Result />
           <CarList2 filters={filters2} searchTerm={searchTerm} />
-          <Page />
+          
         </div>
       </main>
+      <Footer></Footer>
     </div>
   );
 };

@@ -8,14 +8,7 @@ import { RiGasStationLine } from "react-icons/ri";
 import { RiParentLine } from "react-icons/ri";
 
 const CarCard2 = ({ car }) => {
-  // <<<<<<< HEAD
-  //   return (
-  //     <div className="car-card">
-  //       <img src={car.image} alt={car.name} className="car-image" />
-  //       <div className="car-info">
-  //         <div className="Used">
-  //           <p>Used</p>
-  // =======
+ 
   return (
     <div className="car-card">
       <img src={car.image} alt={car.name} className="car-image" />

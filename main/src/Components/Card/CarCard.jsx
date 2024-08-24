@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useContext, useState } from "react";
 import "./CarCard.css";
 import Review from "../Review/Review";
 import Data from "../../Data";
@@ -13,21 +13,12 @@ import Notification from "../../componentOfThanh/ShoppingCart/Notification ";
 
 const CarCard = ({ car }) => {
   const { addToCart } = useContext(CartContext);
-  const [showNotification, setShowNotification] = useState(false);
-  const [notificationPosition, setNotificationPosition] = useState({
-    top: 0,
-    left: 0,
-  });
-  const carCardRef = useRef(null);
+  const [showMessage, setShowMessage] = useState(false);
 
   const handleAddToCart = (product) => {
-    if (carCardRef.current) {
-      const { top, left } = carCardRef.current.getBoundingClientRect();
-      setNotificationPosition({ top: top - 50, left: left + window.scrollX });
-      setShowNotification(true);
-      addToCart(product);
-      setTimeout(() => setShowNotification(false), 3000); // Hiển thị thông báo trong 3 giây
-    }
+    addToCart(product);
+    setShowMessage(true);
+    setTimeout(() => setShowMessage(false), 3000); // 3 giây
   };
   return (
     <div className="car-card">
@@ -70,16 +61,11 @@ const CarCard = ({ car }) => {
         </div>
         <Review></Review>
       </div>
-      {showNotification && (
-        <Notification
-          message="Product added to cart!"
-          onClose={() => setShowNotification(false)}
-          style={{
-            top: `${notificationPosition.top}px`,
-            left: `${notificationPosition.left}px`,
-            position: "absolute",
-          }}
-        />
+      {showMessage && (
+        <div className="custom-toast">
+          Product added to cart!
+          <span className="invertedtriangle"></span>
+        </div>
       )}
     </div>
   );

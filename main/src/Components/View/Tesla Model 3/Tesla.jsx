@@ -56,7 +56,6 @@ const Tesla = () => {
           <CommentBox></CommentBox>
         </div>
       </main>
-      <Footer></Footer>
     </div>
   );
 };
