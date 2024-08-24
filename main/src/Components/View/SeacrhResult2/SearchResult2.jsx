@@ -6,7 +6,7 @@ import SearchResult from "../../SearchResult/SearchResult";
 import Content from "../Content/Content";
 import Page from "../../Page/Page";
 import Header from "../../Header/Header";
-
+import Footer from "../../../componentOfThanh/Footer";
 const SearchResult2 = () => {
   const [filters, setFilters] = useState({
     year: [],
@@ -41,9 +41,10 @@ const SearchResult2 = () => {
           <Search onSearch={handleSearch} />
           <Result2 />
           <SearchResult filters={filters} searchTerm={searchTerm} />
-          <Page />
+          
         </div>
       </main>
+      <Footer></Footer>
     </div>
   );
 };

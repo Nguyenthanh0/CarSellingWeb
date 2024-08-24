@@ -9,6 +9,7 @@ import Conclusion from './conclusion/conclusion';
 import Dealer from '../CarsDetail/Dealer/Dealer'
 import CommentBox from './Comment/Comment';
 import OldComment from './OldComment/OldComment';
+import Footer from '../../../componentOfThanh/Footer';
 import './Tesla.css'
 const Tesla = () => {
     return (
@@ -53,6 +54,7 @@ const Tesla = () => {
                     <CommentBox></CommentBox>
                 </div>
         </main>
+        <Footer></Footer>
         </div>
         
         

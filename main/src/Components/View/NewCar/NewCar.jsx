@@ -45,7 +45,7 @@ const NewCar = () => {
           <Search onSearch={handleSearch} />
           <Result />
           <CarList filters={filters} searchTerm={searchTerm} />
-          <Page />
+         
         </div>
       </main>
 

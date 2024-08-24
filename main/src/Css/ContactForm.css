@@ -61,6 +61,6 @@
     cursor: pointer;
 }
 
-button:hover {
+.button1:hover {
     background-color: #155BB5;
 }
