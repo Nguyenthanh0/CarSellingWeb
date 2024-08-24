@@ -64,3 +64,20 @@
 .button1:hover {
     background-color: #155BB5;
 }
+.button3 {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #1D72E8; /* Thay đổi màu viền nút nếu cần */
+    border-radius: 5px;
+    color: #1D72E8; /* Màu chữ của nút */
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px; /* Khoảng cách từ trên */
+    background-color: transparent; /* Không có màu nền */
+}
+
+.button3:hover {
+    color: #155BB5; /* Màu chữ khi hover */
+}
