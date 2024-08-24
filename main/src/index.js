@@ -15,6 +15,7 @@ import SearchResult2 from "./Components/View/SeacrhResult2/SearchResult2";
 import NewsDetail from "./componentOfThanh/NewsDetail";
 import Review from "./Components/View/Review/Review";
 import Tesla from "./Components/View/Tesla Model 3/Tesla";
+import YourInfo from "./Components/View/CarsDetail/YourInfor/YourInfor";
 
 const router = createBrowserRouter([
   {
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
   {
     path: "/homepage/article/review/tesla",
     element: <Tesla></Tesla>,
+  },
+  {
+    path: "/yourInfor",
+    element: <YourInfo/>
   },
 ]);
 

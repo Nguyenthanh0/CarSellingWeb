@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../Css/ContactForm.css";
 
 const ContactForm = () => {
@@ -9,6 +10,7 @@ const ContactForm = () => {
     subject: "",
     comment: "",
   });
+  const [submissionStatus, setSubmissionStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,7 +20,18 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log("Form data submitted:", formData);
+    // Save form data to localStorage
+    localStorage.setItem("contactInfo", JSON.stringify(formData));
+    setSubmissionStatus("Your message has been sent successfully!");
+
+    // Optionally clear the form after submission
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      comment: "",
+    });
   };
 
   return (
@@ -69,7 +82,7 @@ const ContactForm = () => {
             onChange={handleChange}
             required
           >
-            <option value="">Subject</option>
+            <option value="">Select Subject</option>
             <option value="inquiry">Inquiry</option>
             <option value="test-drive">Test Drive</option>
             <option value="service">Service</option>
@@ -86,9 +99,13 @@ const ContactForm = () => {
             required
           ></textarea>
         </div>
-        <button className="button1" type="submit">
-          Contact Dealer
-        </button>
+        <div>
+          <button className="button1" type="submit">
+            Contact Dealer
+          </button>
+          <Link to="/yourInfor" className="button3">View Your Info</Link>
+        </div>
+        {submissionStatus && <p className="submission-status">{submissionStatus}</p>}
       </form>
     </div>
   );
