@@ -4,6 +4,8 @@ import review1 from "../../../../img/Review1.png";
 import review2 from "../../../../img/Review2.png";
 import user from "../../../../img/user1.png";
 import "./OurReview.css";
+import Footer from "../../../../componentOfThanh/Footer";
+
 const OurReviews = () => {
   const reviews = [
     {
@@ -34,6 +36,7 @@ const OurReviews = () => {
           <ReviewCard key={index} {...review} />
         ))}
       </div>
+      {/* <Footer></Footer> */}
     </div>
   );
 };

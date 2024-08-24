@@ -23,6 +23,7 @@ import CarInformation from "./CarInformation/CarInformation";
 import ImageGallery from "./ImageGallery/ImageGallery";
 import FeatureComponent from "./Feature/Feature";
 import Dealer from "./Dealer/Dealer";
+import Footer from "../../../componentOfThanh/Footer.jsx";
 
 const CarsDetail = () => {
   const [currentImage, setCurrentImage] = useState(c8); // Set the initial main image
@@ -100,6 +101,7 @@ const CarsDetail = () => {
         </div>
         <div className="row3"></div>
       </main>
+      <Footer></Footer>
     </div>
   );
 };

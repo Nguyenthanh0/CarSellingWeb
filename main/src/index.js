@@ -15,6 +15,8 @@ import SearchResult2 from "./Components/View/SeacrhResult2/SearchResult2";
 import NewsDetail from "./componentOfThanh/NewsDetail";
 import Review from "./Components/View/Review/Review";
 import Tesla from "./Components/View/Tesla Model 3/Tesla";
+import ShoppingCart from "./componentOfThanh/ShoppingCart/ShoppingCart";
+import { CartProvider } from "../src/componentOfThanh/ShoppingCart/CartContext ";
 
 const router = createBrowserRouter([
   {
@@ -70,15 +72,20 @@ const router = createBrowserRouter([
     path: "/homepage/article/review/tesla",
     element: <Tesla></Tesla>,
   },
+  {
+    path: "/homepage/buy",
+    element: <ShoppingCart></ShoppingCart>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CartProvider>
+      {" "}
+      {/* Bao quanh RouterProvider bằng CartProvider */}
+      <RouterProvider router={router} />
+    </CartProvider>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

@@ -45,6 +45,7 @@ const Login = () => {
       if (rememberMe) {
         localStorage.setItem("loggedInUser", JSON.stringify(user));
       }
+      localStorage.setItem("loggedInUserName", name); // Lưu tên người dùng
       navigate("/homepage"); // Chuyển hướng đến trang chính sau khi đăng nhập thành công
     } else {
       alert("Name hoặc password không đúng");

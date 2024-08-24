@@ -5,6 +5,7 @@
     align-items: center;
     background-color: #0B0C10;
     gap: 50px;
+    margin-bottom: 100px;
 }
 
 .info-cmt-newdetail {
@@ -28,6 +29,49 @@
 
 .contact-user-newdetail {
     display: flex;
+    gap: 20px;
     padding: 10px 16px;
     background-color: #071620;
+}
+
+.icon-contact-user {
+    font-size: 26px;
+}
+
+.straightline {
+    width: 0px;
+    height: 56px;
+    border: 1px solid #ffffff;
+}
+
+.defaultCommnet {
+    display: flex;
+    gap: 20px;
+}
+
+.ta-newdetail-thanh {
+    background-color: #152836;
+    color: #A9A9A9;
+    width: 681px;
+    padding: 16px;
+    border-radius: 3px;
+}
+
+.btn-cmt-newdetail {
+    /* display: flex;
+    align-items: center; */
+    padding: 15px 40px;
+    background-color: #007CC7;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.cmt-newdetail-thanh {
+    margin: 0px;
+}
+
+.user-cmt-newdetail-thanh {
+    width: 334px;
+    display: flex;
+    flex-direction: column;
 }

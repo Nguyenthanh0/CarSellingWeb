@@ -33,7 +33,7 @@ const Navbar = () => {
           <Link to="">Compare</Link>
         </li>
         <li>
-          <Link to="">Sell</Link>
+          <Link to="/homepage/buy">Buy</Link>
         </li>
         <li>
           <select className="article-select" onChange={handleSelectChange}>
@@ -71,6 +71,7 @@ const Navbar = () => {
                 localStorage.removeItem("loggedInUser");
                 window.location.reload(); // Tải lại trang để cập nhật Navbar
               }}
+              className="btn-apterlogin"
             >
               Logout
             </button>

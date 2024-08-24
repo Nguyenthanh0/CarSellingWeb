@@ -117,3 +117,11 @@ a:-webkit-any-link {
     position: absolute;
     right: 37px;
 }
+
+.btn-apterlogin {
+    padding: 10px;
+    color: #fff;
+    background-color: #007CC7;
+    border-radius: 5px;
+    margin-left: 10px;
+}

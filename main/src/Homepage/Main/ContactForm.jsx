@@ -66,7 +66,7 @@ const ContactForm = () => {
     <div>
       {/* {submitted && <p>Cảm ơn bạn đã gửi liên hệ!</p>} */}
       {error && <p style={{ color: "red" }}>{error}</p>}
-      <form onSubmit={handleSubmit}>
+      <form className="form-concactform-thanh" onSubmit={handleSubmit}>
         <div>
           <label style={{ color: "white" }} htmlFor="name">
             Name
@@ -126,7 +126,9 @@ const ContactForm = () => {
             placeholder="Leave a message here"
           />
         </div>
-        <button type="submit" className="Send1">Send</button>
+        <button type="submit" className="Send1">
+          Send
+        </button>
       </form>
     </div>
   );
