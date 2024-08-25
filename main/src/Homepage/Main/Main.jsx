@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Main.css";
 import RecommendedCars from "./RecommendedCars";
 import cmtC from "../../images/commentCar.png";
@@ -19,10 +20,15 @@ import flogo from "../../images/fiatlogo.png";
 import hlogo from "../../images/huyndailogo.png";
 import plogo from "../../images/peugoetlogo.png";
 import vlogo from "../../images/volvologo.png";
+import { CartContext } from "../../componentOfThanh/ShoppingCart/CartContext ";
+import { BsCartCheckFill } from "react-icons/bs";
 
 function Main() {
   const filteredCar2 = car.filter((car) => car.id === 2);
   const filteredCar3 = car.filter((car) => car.id === 3);
+  const { cart, showIcon, handleIconClick, showBanner, handleBannerClose } =
+    useContext(CartContext);
+  const navigate = useNavigate();
 
   const [activeOption, setActiveOption] = useState("New"); // Khởi tạo với giá trị mặc định
   const handleClick = (option) => {
@@ -382,6 +388,33 @@ function Main() {
           </div>
         </div>
       </div>
+      {showIcon && (
+        <div className="checkout-icon" onClick={handleIconClick}>
+          <BsCartCheckFill className="icon" />
+        </div>
+      )}
+
+      {showBanner && (
+        <div className="checkout-banner">
+          <button className="banner-close" onClick={handleBannerClose}>
+            &times;
+          </button>
+          <div className="banner-content">
+            <h2>Thông Tin Đơn Hàng</h2>
+            <ul>
+              {/* Assuming cart items are already available in the context */}
+              {cart.map((product) => (
+                <li key={product.id}>
+                  <p>
+                    {product.name} - {product.price}
+                  </p>
+                </li>
+              ))}
+            </ul>
+            <p className="status">Đang giao</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -9,7 +9,6 @@ import { RiParentLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { FaCartShopping } from "react-icons/fa6";
 import { CartContext } from "../../componentOfThanh/ShoppingCart/CartContext ";
-import Notification from "../../componentOfThanh/ShoppingCart/Notification ";
 
 const CarCard = ({ car }) => {
   const { addToCart } = useContext(CartContext);
@@ -18,7 +17,7 @@ const CarCard = ({ car }) => {
   const handleAddToCart = (product) => {
     addToCart(product);
     setShowMessage(true);
-    setTimeout(() => setShowMessage(false), 3000); // 3 giây
+    setTimeout(() => setShowMessage(false), 2000); // 3 giây
   };
   return (
     <div className="car-card">
