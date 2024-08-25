@@ -5,7 +5,7 @@ const Content = ({ title, description }) => {
   return (
     <div>
       <div className="content1">
-        <h1>{title}</h1>
+        <h1 style={{width:'900px'}}>{title}</h1>
         <p>{description}</p>
       </div>
     </div>
