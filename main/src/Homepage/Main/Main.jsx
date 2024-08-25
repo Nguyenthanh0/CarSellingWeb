@@ -26,8 +26,15 @@ import { BsCartCheckFill } from "react-icons/bs";
 function Main() {
   const filteredCar2 = car.filter((car) => car.id === 2);
   const filteredCar3 = car.filter((car) => car.id === 3);
-  const { cart, showIcon, handleIconClick, showBanner, handleBannerClose } =
-    useContext(CartContext);
+  const {
+    cart,
+    showIcon,
+    handleIconClick,
+    showBanner,
+    handleBannerClose,
+    orderStatus,
+    receivedCount,
+  } = useContext(CartContext);
   const navigate = useNavigate();
 
   const [activeOption, setActiveOption] = useState("New"); // Khởi tạo với giá trị mặc định
@@ -393,25 +400,32 @@ function Main() {
           <BsCartCheckFill className="icon" />
         </div>
       )}
-
       {showBanner && (
         <div className="checkout-banner">
-          <button className="banner-close" onClick={handleBannerClose}>
-            &times;
-          </button>
           <div className="banner-content">
+            <button className="banner-close" onClick={handleBannerClose}>
+              ×
+            </button>
             <h2>Thông Tin Đơn Hàng</h2>
             <ul>
-              {/* Assuming cart items are already available in the context */}
               {cart.map((product) => (
-                <li key={product.id}>
-                  <p>
+                <li>
+                  <p
+                    key={product.id}
+                    style={{
+                      color: orderStatus[product.id] ? "red" : "#969494",
+                    }}
+                  >
                     {product.name} - {product.price}
                   </p>
                 </li>
               ))}
             </ul>
-            <p className="status">Đang giao</p>
+            <p className="status">
+              {receivedCount > 0
+                ? `Đã nhận hàng thành công: ${receivedCount}`
+                : "Đang giao"}
+            </p>
           </div>
         </div>
       )}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import FilterSidebar from "../../FilterSidebar";
 import Search from "../../Search";
 import Result from "../../Result";
@@ -8,6 +8,9 @@ import Header from "../../Header/Header";
 import Content from "../Content/Content";
 import "./UsedCar.css";
 import Footer from "../../../componentOfThanh/Footer";
+import { CartContext } from "../../../componentOfThanh/ShoppingCart/CartContext ";
+import { BsCartCheckFill } from "react-icons/bs";
+
 const UsedCar = () => {
   const [filters2, setFilters] = useState({
     year: [],
@@ -32,6 +35,16 @@ const UsedCar = () => {
     setSearchTerm(term);
   };
 
+  const {
+    cart,
+    showIcon,
+    handleIconClick,
+    showBanner,
+    handleBannerClose,
+    orderStatus,
+    receivedCount,
+  } = useContext(CartContext);
+
   return (
     <div>
       <Header />
@@ -45,8 +58,41 @@ const UsedCar = () => {
           <Search onSearch={handleSearch} />
           <Result />
           <CarList2 filters={filters2} searchTerm={searchTerm} />
-          
         </div>
+        {showIcon && (
+          <div className="checkout-icon" onClick={handleIconClick}>
+            <BsCartCheckFill className="icon" />
+          </div>
+        )}
+        {showBanner && (
+          <div className="checkout-banner">
+            <div className="banner-content">
+              <button className="banner-close" onClick={handleBannerClose}>
+                ×
+              </button>
+              <h2>Thông Tin Đơn Hàng</h2>
+              <ul>
+                {cart.map((product) => (
+                  <li>
+                    <p
+                      key={product.id}
+                      style={{
+                        color: orderStatus[product.id] ? "red" : "#969494",
+                      }}
+                    >
+                      {product.name} - {product.price}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+              <p className="status">
+                {receivedCount > 0
+                  ? `Đã nhận hàng thành công: ${receivedCount}`
+                  : "Đang giao"}
+              </p>
+            </div>
+          </div>
+        )}
       </main>
       <Footer></Footer>
     </div>
