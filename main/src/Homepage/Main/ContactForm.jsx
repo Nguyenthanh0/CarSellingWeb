@@ -124,6 +124,7 @@ const ContactForm = () => {
             rows="9"
             cols="60"
             placeholder="Leave a message here"
+            style={{ width: "600px" }}
           />
         </div>
         <button type="submit" className="Send1">
